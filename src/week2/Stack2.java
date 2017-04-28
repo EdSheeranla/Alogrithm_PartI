@@ -1,5 +1,9 @@
 package week2;
 
+import java.util.LinkedList;
+import java.util.PriorityQueue;
+import java.util.Queue;
+
 /**
  * Created by sheeran on 2017/3/24.
  * 使用数组来创建stack
@@ -27,6 +31,7 @@ public class Stack2 {
             copy[i]=stack[i];
         }
         stack=copy;
+
     }
 
     public boolean isEmpty(){
@@ -37,5 +42,11 @@ public class Stack2 {
         if( N>0 && N==stack.length/4)
             resize(stack.length/2);
         return stack[N--];
+    }
+
+    public static void main(String[] args) {
+        int[] is=new int[1];
+        int i=0;
+        is[i++]=1;
     }
 }
